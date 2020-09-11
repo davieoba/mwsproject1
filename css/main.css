@@ -1,0 +1,152 @@
+:root {
+  --night-color: #343a40;
+  --day-color: #fcb017;
+  --outline-color: #def2fd;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--outline-color); */
+}
+.container {
+  max-width: 400px;
+  text-align: center;
+  margin: 40px auto;
+  color: #000;
+  /* position: relative; */
+}
+
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.container label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.location {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  outline: none;
+  /* border: 2px solid; */
+}
+
+input:focus {
+  border: 2px solid var(--outline-color);
+  border-radius: 5px;
+}
+
+.weather {
+  min-height: 400px;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background-color: var(--outline-color); */
+  /* background-color: #fff; */
+  background-color: transparent;
+  /* color: #fff; */
+}
+
+.weather__info {
+  min-height: 400px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 50px;
+}
+
+.country__info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.country__info h5 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.weather__update {
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+}
+
+.temperature h4 {
+  font-size: 250%;
+}
+
+.icons {
+  color: var(--day-color);
+  /* font-size: 20px; */
+}
+
+.divide {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.humidity {
+  display: flex;
+  margin-right: 20px;
+}
+
+.wind__speed {
+  display: flex;
+}
+
+/* interacting with the js */
+.weather__info {
+  display: none;
+}
+
+.weatherdesc__value {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.back {
+  /* background-image: url(../img/day.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: var(--outline-color);
+  /* background-color: rgba(8, 8, 8, 0.4); */
+  /* background-color: #fff; */
+  min-height: 400px;
+  width: 400px;
+  position: absolute;
+  filter: blur(8px);
+}
